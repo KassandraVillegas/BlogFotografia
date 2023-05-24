@@ -1,0 +1,415 @@
+/*Bas de los estilos*/
+
+/* Establece las propiedades básicas para el cuerpo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.4em;
+  color: black;
+  background: whitesmoke;
+  font-family: sans-serif;
+}
+/* Establece un ancho máximo del 100% para las imágenes, un alto automático y un borde redondeado de 3 píxeles */
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+/* Establece que los enlaces no tengan subrayado y que su color sea el heredado del elemento padre */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos de la cuadrícula */
+
+/* Establece el margen y el relleno de las secciones y columnas */
+.section{
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+/* Establece la visualización en bloque y flotante de las columnas, así como su margen y ancho */
+.col{
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child{
+  margin-left: 0;
+}
+/* Establece el ancho del 100% para una columna de 3 partes */
+.span_3_of_3{
+  width: 100%;
+}
+/* Establece el ancho del 66.1% para una columna de 2 partes */
+.span_2_of_3{
+  width: 66.1%;
+}
+/* Establece el ancho del 32.2% para una columna de 1 parte */
+.span_1_of_3{
+  width: 32.2%;
+}
+
+/* Estilos del encabezado y la navegación */
+
+/* Establece el ancho máximo del 100%, un fondo blanco y un relleno de 20 píxeles para el encabezado */
+header{
+   background-color: #fff;
+      border-bottom: 2px solid #ddd;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+/* Establece un ancho del 100%, un margen inferior de 1em y un fondo morado para la barra de navegación */
+nav{
+  width: 100%;
+  margin-bottom: 1em;
+  background:rgb(173, 9, 232);
+}
+
+.presentation {
+  background-image: url('ruta/imagen.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Establece un ancho de 100 píxeles, una visualización en bloque, y un margen automático para el logo */
+.logo{
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+/* Establece el relleno y el margen de la lista de navegación, así como su color, fuente y alineación */
+ul{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  transition: max-height 0.5s;
+}
+/* Establece la visualización en línea de los elementos de navegación, su relleno y su tamaño de fuente */
+.nav-item{
+  display: inline-block;
+  padding: 20px;
+  font-size: 1.4em;
+}
+/* Establece el color de fondo y el cursor cuando se pasa el cursor sobre los elementos de navegación */
+.nav-item:hover{
+  background: blueviolet;
+  cursor: pointer;
+}
+
+
+/* Es una clase CSS que se aplica a una barra de navegación en la parte superior de la página. Esta regla establece el ancho de la barra en 100%, 
+el cuadro de tamaño en "border-box", el color de fondo en gris oscuro, el texto alineado a la izquierda, el relleno de 15 píxeles arriba y abajo
+y 20 píxeles a los lados, el color de texto en blanco, el tamaño de fuente en 1.4em y el cursor en modo de puntero.*/
+.menu-bar{
+  width: 100%;
+  box-sizing: border-box;
+  background: #2d2d2d;
+  text-align: left;
+  padding: 15px 20px;
+  color: white;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+/* Es una clase CSS que se aplica a un icono de menú serendipia. Esta regla establece que el icono esté flotando a la derecha, 
+elimina cualquier elemento que se encuentre en la misma línea, y establece el tamaño de fuente en 1.4em.*/
+.serendipia-icon{
+  float:right;
+  clear: both;
+  margin-top: -5px;
+  font-size: 1.4em;
+
+}
+
+/* Blog publicaciones*/
+
+/* Se aplica a un contenedor principal. Esta regla establece el ancho máximo en 1020 píxeles, 
+el margen automático para centrar el contenedor en la página y un relleno de 20 píxeles en cada lado.*/
+.container{
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* Se aplica a los contenedores de las publicaciones del blog. Esta regla establece el fondo blanco, 
+los márgenes superior e inferior en 0 y 2em, respectivamente, y el relleno de 35 píxeles arriba y abajo y 30 píxeles a los lados.*/
+.blog-post{
+  background: black;
+  margin: 0 auto 2em auto;
+  padding: 35px 30px;
+}
+/* Se aplica a los contenedores de las publicaciones laterales en el blog. 
+Esta regla establece el fondo blanco, el margen superior de 0, el margen inferior de 1.5em, el ancho de 15em y el relleno de 20 píxeles.*/
+.side-post{
+  background: black;
+  margin: 0 auto 1.5em auto;
+  width: 15em;
+  padding: 20px;
+}
+/* Se aplica al contenido principal de las publicaciones del blog. Esta regla establece el tamaño de fuente en 1em, 
+el borde izquierdo de 5 píxeles en negro y el relleno izquierdo de 15 píxeles.*/
+.blog-content{
+  font-size: 1em;
+  border-left: 5px solid black;
+  padding-left: 15px;
+}
+/* Se aplica al contenido secundario de las publicaciones laterales en el blog. 
+Esta regla establece el tamaño de fuente en 0.9em, el margen superior de 8 píxeles y el margen inferior de 0.*/
+.side-content{
+  font-size: .9em;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+/* Se aplica al título de las publicaciones del blog. 
+Esta regla establece el peso de la fuente en 500 píxeles, el tamaño de fuente en 2.5em y el margen superior de 5 píxeles.*/
+.blog-title{
+  font-weight: 500px;
+  font-size: 2.5em;
+  margin-top: 5px;
+}
+/* Es una clase CSS que se aplica a la fecha de las publicaciones del blog. Esta regla establece el tamaño de fuente en 1em, 
+el peso de la fuente en 400, el color en gris claro, el margen superior de -10 píxeles, el subrayado de la línea de texto y el 
+color del subrayado en el mismo color que el texto.*/
+.date{
+  font-size: 1em;
+  font-weight: 400;
+  color: pink;
+  margin-top: -10px;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+} 
+/* Clase que se utiliza para los enlaces en los artículos del blog. Este estilo cambia el color del enlace a un azul oscuro y lo hace cursiva. 
+También incluye una transición suave cuando se pasa el cursor sobre el enlace.*/
+.post-link{
+  color: #0841a8;
+  font-style: italic;
+  transition: all 0.45;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+article h2 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+
+article p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+article a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+aside {
+  max-width: 300px;
+  margin-left: 20px;
+}
+
+aside h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+aside ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+aside li {
+  margin-bottom: 10px;
+}
+
+aside a {
+  color: #333;
+  text-decoration: none;
+}
+
+aside a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/*Boton*/
+
+/* Clase que se utiliza para crear un botón en la página web. El botón tiene un fondo morado, 
+un texto blanco y un tamaño de fuente grande. Además, este estilo incluye una transición suave cuando se pasa el cursor sobre el botón.*/
+.button{
+  display: block;
+  padding: 15px 20px;
+  margin-top: .8em;
+  background: #809;
+  text-align: center;
+  color: white;
+  font-size: 1.4em;
+  transition: all .4s;
+}
+
+.button:hoover{
+  background: #005c7b;
+}
+
+/* Estilos de pie de página */
+
+/* Es una etiqueta que se utiliza para el pie de página. Este estilo incluye un fondo negro y un texto blanco con un tamaño de fuente de 
+14 píxeles. También tiene un margen superior y un relleno interno.*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* Este estilo se utiliza para el párrafo dentro del pie de página. El estilo elimina el margen 
+y le da al texto un tamaño de fuente de 14 píxeles.*/
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+/* Es un estilo que se utiliza para los enlaces en el pie de página. Este estilo cambia el color del enlace a blanco y elimina el subrayado.*/
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Estilo que se utiliza para los enlaces en el pie de página cuando el cursor se coloca sobre ellos. Este estilo subraya el enlace.*/
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para hacer responsive el sitio*/
+
+/* Son consultas de medios que se utilizan para hacer que la página web sea más responsive a diferentes tamaños de pantalla. */
+
+/* @900px */
+@media screem and (max-width: 56.2em){
+  .col{
+    margin: 1% 0 1% 0%;
+  }
+
+  .span_3_of_3,
+  .span_2_of_3,
+  .span_1_of_3{
+    width: 100%;
+  }
+
+  .side-post{
+    width: 42%;
+    float: left;
+    margin: -2% 0 1% 1.6%;
+  }
+}
+
+/* @685px */ 
+
+@media screen and (max-width: 42.813em){
+  .side-post{
+    width: auto;
+    padding: 15px;
+    margin: -2% auto 8% auto;
+  }
+
+  .blog-title{
+    font-size: 1.95em;
+  }
+
+  .date {
+    font-size: .9em;
+  }
+}
+
+/* @480px */
+
+@media screen and (max-width: 30em) {
+  nav ul{
+    max-height: 19em;
+  }
+
+}
+
+header .textos-header{
+ 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textos-header p{
+  font-size: 20px;
+  color:black;
+}
+
+.textos-header p{
+  font-size: 20px;
+  font-weight: 300;
+  color:black;
+}
+
